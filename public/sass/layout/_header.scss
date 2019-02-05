@@ -1,0 +1,21 @@
+.header {
+    height: 85vh;
+    background-image: url("../images/background.svg") ;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    &__logo-box {
+        position: absolute;
+        top: 2rem;
+        left: 12rem;
+    }
+    &__logo {
+        height: 6.5rem;
+    }
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+}

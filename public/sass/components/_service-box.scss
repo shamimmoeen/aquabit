@@ -1,0 +1,44 @@
+.service-box {
+    background-color: $color-light-grey ;
+    padding: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    //box-shadow: 0 1.5rem 4rem rgba($color-heavy-dark, .15);
+    transition: all .3s;
+    display: block;
+    &__text {
+        font-size: 1.4rem;
+        line-height: -.3rem;
+    }
+    &__website {
+        width: 15rem;
+        margin: 0 auto;
+    }
+    &__marketing {
+        width: 15rem;
+        margin: 0 auto;
+    }
+    &__ux_ui {
+        width: 15rem;
+        margin: 0 auto;
+    }
+    &__image {
+        width: 15rem;
+        margin: 0 auto;
+    }
+    &__branding {
+        width: 15rem;
+        margin: 0 auto;
+    }
+    &__video {
+        width: 15rem;
+        margin: 0 auto;
+    }
+    &:hover {
+        // transform: translateY(1.5rem) scale(1.03);
+        border-radius: 500px;
+        background-color: $color-ultra-light;
+    }
+}
