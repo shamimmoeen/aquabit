@@ -102,9 +102,10 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
+  margin: 1rem;
   padding: 1rem 5rem;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 2rem;
   transition: all .2s;
   position: relative; }
 
@@ -250,10 +251,6 @@ body {
       padding: 2.5rem; }
       .card__side__back__para {
         font-size: 1.4rem; }
-  .card:hover .card__side__front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side__back {
-    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 28rem;
@@ -292,6 +289,44 @@ body {
   .card__btn {
     margin-left: 2.5rem; }
 
+.blog__image {
+  background-size: cover;
+  background-position: center;
+  height: 20rem; }
+  .blog__image__1 {
+    background-image: url(../images/reactjs.jpg); }
+  .blog__image__2 {
+    background-image: url(../images/digital_marketing.jpg); }
+  .blog__image__3 {
+    background-image: url(../images/golden_ratio.jpg); }
+
+.blog__content {
+  margin: 1rem 1rem 1rem .5rem; }
+  .blog__content__heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 1rem 0 2rem 0;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid #1d4e6d; }
+    .blog__content__heading__title {
+      margin: 1rem 0 1rem 0; }
+    .blog__content__heading__sub {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.2rem; }
+      .blog__content__heading__sub__info {
+        font-size: 1.4rem;
+        font-weight: 300; }
+  .blog__content__body {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0 0 1rem 0; }
+
+.navbar {
+  color: #f7f7f7;
+  float: right;
+  list-style: none; }
+
 .header {
   height: 85vh;
   background-image: url("../images/background.svg");
@@ -303,7 +338,7 @@ body {
     top: 2rem;
     left: 12rem; }
   .header__logo {
-    height: 6.5rem; }
+    height: 9rem; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -334,14 +369,27 @@ body {
     width: calc(2*((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3*((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+  .row [class^="column-"] {
+    float: left; }
+    .row [class^="column-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .column-1-on-2 {
+    width: calc((100% - 2rem) / 2); }
+  .row .column-1-on-3 {
+    width: calc((100% - 2 * 2rem) / 3); }
+  .row .column-1-on-4 {
+    width: calc((100% - 3 * 2rem) / 4); }
+  .row .column-2-on-3 {
+    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+  .row .column-2-on-4 {
+    width: calc(2*((100% - 3 * 2rem) / 4) + 2rem); }
+  .row .column-3-on-4 {
+    width: calc(3*((100% - 3 * 2rem) / 4) + 2 * 2rem); }
 
 .section-projects {
   height: 100vh;
   background-color: #f7f7f7; }
 
-.section-contact {
-  background-color: #89f7fe;
-  padding: 15rem 5rem; }
-
-.contact {
-  background-image: url(../images/leopard-2.jpg); }
+.section-blog {
+  height: 100vh;
+  background-color: #f7f7f7; }

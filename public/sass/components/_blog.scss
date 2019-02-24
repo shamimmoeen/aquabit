@@ -1,0 +1,46 @@
+.blog {
+    &__container {
+
+    }
+    &__image {
+        background-size: cover;
+        background-position: center;
+        height: 20rem;
+        &__1 {
+            background-image: url(../images/reactjs.jpg);
+        }
+        &__2 {
+            background-image: url(../images/digital_marketing.jpg);
+        }
+        &__3 {
+            background-image: url(../images/golden_ratio.jpg);
+        }
+    }
+    &__content {
+        margin: 1rem 1rem 1rem .5rem;
+        &__heading {
+            font-size: $small-font-size;
+            font-weight: 700;
+            margin : 1rem 0 2rem 0;
+            padding : 0 0 1rem 0;
+            border-bottom : 1px solid $color-dark;
+            &__title {
+                margin : 1rem 0 1rem 0;
+            }
+            &__sub {
+                font-size: $smallest-font-size;
+                font-weight: 500;
+                line-height: 1.2rem;
+                &__info {
+                    font-size: $tiny-font-size;
+                    font-weight: 300;
+                }
+            }
+        }
+        &__body{
+            font-size: $tiny-font-size;
+            font-weight: 300;
+            padding: 0 0 1rem 0;
+        }
+    }
+}

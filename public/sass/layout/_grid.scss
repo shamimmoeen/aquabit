@@ -42,4 +42,40 @@
     .col-3-of-4 {
         width: calc(3*((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
     }
+
+
+
+
+
+    [class^="column-"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal-on;
+        }
+    }
+
+    .column-1-on-2 {
+        width: calc((100% - #{$gutter-horizontal-on}) / 2);
+    }
+
+    .column-1-on-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal-on}) / 3);
+    }
+
+    .column-1-on-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal-on}) / 4);
+    }
+
+    .column-2-on-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal-on}) / 3) + #{$gutter-horizontal-on});
+    }
+
+    .column-2-on-4 {
+        width: calc(2*((100% - 3 * #{$gutter-horizontal-on}) / 4) + #{$gutter-horizontal-on});
+    }
+
+    .column-3-on-4 {
+        width: calc(3*((100% - 3 * #{$gutter-horizontal-on}) / 4) + 2 * #{$gutter-horizontal-on});
+    }
 }
