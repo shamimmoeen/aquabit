@@ -51,3 +51,11 @@ body {
     }
 }
 
+.heading-contact {
+    color: $color-dark;
+    font-size: $blog-title-font-size;
+    span {
+        display: block;
+    }
+}
+

@@ -1,5 +1,28 @@
 .navbar {
-    color : $color-light-grey;
     float: right;
-    list-style: none;
+    position: absolute;
+    top : 3rem;
+    left : 55rem;
+    &__ul {
+        list-style: none;
+        
+        li {
+            display : inline-block;
+            margin: 2rem 5rem 0 0;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color : $color-light-grey;
+                font-size: $smallest-font-size;
+                padding : 1rem 2rem 1rem 2rem;
+            }
+        }
+
+        &__menu:hover {
+            background-color: brown;
+        }
+    }
 }

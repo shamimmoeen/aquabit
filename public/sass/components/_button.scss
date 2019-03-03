@@ -76,3 +76,16 @@
         transform : translateY(0);
     }
 }
+
+.btn-secondary {
+    background-color: $color-ultra-light;
+    padding: 1rem 2.5rem;
+    color: inherit;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        background-color: $color-dark;
+        color: $color-ultra-light;
+    }
+}

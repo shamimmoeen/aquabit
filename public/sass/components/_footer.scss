@@ -1,0 +1,26 @@
+.footer {
+    height: 70vh;
+    background-image: url("../images/footer.svg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    &__logo {
+        position: absolute;
+        top : 66%;
+        left : 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__text {
+        position: absolute;
+        top : 110%;
+        left : 50%;
+        transform: translate(-50%, -50%);
+        min-width: 50rem;
+        display: block;
+        &__style {
+            color: $color-light-grey;
+            font-family: inherit;
+            text-align: center;
+        }
+    }
+}
