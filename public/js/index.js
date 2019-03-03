@@ -42,7 +42,7 @@ var animation_video = bodymovin.loadAnimation ({
 })
 
 $(document).ready(function(){
-    $('.center').slick({
+    $('.recent-project-items').slick({
         centerMode: true,
         centerPadding: '10%',
         slidesToShow: 3,
