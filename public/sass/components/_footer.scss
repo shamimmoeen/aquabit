@@ -17,10 +17,13 @@
         transform: translate(-50%, -50%);
         min-width: 50rem;
         display: block;
+        
         &__style {
             color: $color-light-grey;
             font-family: inherit;
             text-align: center;
+            font-weight: 200;
+            font-size: $tiny-font-size;
         }
     }
 }
